@@ -20,7 +20,7 @@ export default function About() {
             </p>
             <div className="space-y-4 text-foreground/70 leading-relaxed">
               <p>
-                I&apos;m a certified Spanish teacher from Colombia with over 8
+                I&apos;m a certified Spanish teacher from Mexico with over 8
                 years of experience teaching children online. I hold a degree in
                 Early Childhood Education and a DELE C2 certification.
               </p>
