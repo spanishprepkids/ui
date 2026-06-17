@@ -1,21 +1,21 @@
 const testimonials = [
   {
     quote:
-      "My daughter went from knowing zero Spanish to having full conversations in just 6 months. María is incredible with kids!",
+      "Emma knew maybe five words in Spanish when we started. Six months later she's chatting with her abuela on FaceTime — and she actually asks to practice. Alejandra Gomez has such a gentle way with kids. Emma thinks she's just playing games every week.",
     name: "Sarah M.",
     detail: "Mom of Emma, age 7",
     stars: 5,
   },
   {
     quote:
-      "The classes are the highlight of my son's week. He runs to the computer every Tuesday and Thursday!",
+      "Lucas used to hide when it was lesson time. Now he asks every morning if today is an Alejandra day. She remembers his dinosaur phase and his favorite colors — little things that make him feel seen. Alejandra Gomez turned something he dreaded into the best part of his week.",
     name: "David R.",
     detail: "Dad of Lucas, age 5",
     stars: 5,
   },
   {
     quote:
-      "We've tried other tutors, but nobody compares. María makes learning feel like play. Sofia asks for extra classes!",
+      "We tried two other tutors before we found Alejandra Gomez. Sofia was bored and resistant. With Alejandra, it clicked right away — songs, stories, no pressure. Now Sofia asks for extra classes. I didn't think that was possible.",
     name: "Jennifer L.",
     detail: "Mom of Sofia, age 10",
     stars: 5,

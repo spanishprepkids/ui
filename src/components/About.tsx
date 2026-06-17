@@ -13,7 +13,7 @@ export default function About() {
           {/* Bio */}
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-2">
-              ¡Hola! I&apos;m María
+              ¡Hola! I&apos;m Alejandra Gomez
             </h2>
             <p className="text-primary-dark font-semibold mb-6">
               Certified Spanish Teacher &bull; 8+ Years Experience
