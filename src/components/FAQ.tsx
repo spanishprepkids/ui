@@ -33,10 +33,10 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 bg-warm-100/50">
+    <section id="faq" className="py-20 bg-surface-muted">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
             Frequently Asked Questions
           </h2>
         </div>
@@ -45,13 +45,13 @@ export default function FAQ() {
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className="bg-white rounded-xl border border-warm-200/60 overflow-hidden"
+              className="bg-surface rounded-xl border border-border overflow-hidden"
             >
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between px-6 py-5 text-left"
               >
-                <span className="font-semibold text-foreground">{faq.q}</span>
+                <span className="font-medium text-base text-foreground">{faq.q}</span>
                 <span
                   className={`text-primary text-xl transition-transform ${
                     open === i ? "rotate-45" : ""
@@ -61,7 +61,7 @@ export default function FAQ() {
                 </span>
               </button>
               {open === i && (
-                <div className="px-6 pb-5 text-foreground/60 leading-relaxed">
+                <div className="px-6 pb-5 text-sm text-foreground/65 leading-relaxed">
                   {faq.a}
                 </div>
               )}

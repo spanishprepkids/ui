@@ -24,13 +24,13 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-warm-100/50">
+    <section className="py-20 bg-surface-muted">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
             What Parents Are Saying
           </h2>
-          <p className="mt-4 text-lg text-foreground/60">
+          <p className="mt-3 text-base text-foreground/65">
             Don&apos;t just take our word for it.
           </p>
         </div>
@@ -39,20 +39,20 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-white rounded-2xl p-8 shadow-sm border border-warm-200/60"
+              className="bg-surface rounded-2xl p-8 shadow-sm border border-border"
             >
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: t.stars }).map((_, i) => (
-                  <span key={i} className="text-primary text-xl">
+                  <span key={i} className="text-secondary text-lg">
                     ★
                   </span>
                 ))}
               </div>
-              <p className="text-foreground/80 leading-relaxed mb-6 italic">
+              <p className="text-base text-foreground/75 leading-relaxed mb-6">
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div>
-                <p className="font-bold text-foreground">{t.name}</p>
+                <p className="font-semibold text-foreground">{t.name}</p>
                 <p className="text-sm text-foreground/50">{t.detail}</p>
               </div>
             </div>

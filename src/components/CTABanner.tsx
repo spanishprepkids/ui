@@ -2,16 +2,16 @@ export default function CTABanner() {
   return (
     <section className="py-20 bg-primary">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-white">
+        <h2 className="text-2xl md:text-3xl font-semibold text-on-primary">
           Ready to Start Your Child&apos;s Spanish Journey?
         </h2>
-        <p className="mt-4 text-lg text-white/80 max-w-xl mx-auto">
+        <p className="mt-3 text-base text-on-primary/80 max-w-xl mx-auto">
           Book a free 25‑minute trial class today. No commitment, no credit card
           required.
         </p>
         <a
           href="#pricing"
-          className="mt-8 inline-flex items-center justify-center bg-white text-primary-dark font-bold px-10 py-4 rounded-full text-lg hover:bg-warm-100 transition-colors shadow-lg"
+          className="mt-8 inline-flex items-center justify-center bg-accent hover:bg-accent-dark text-white font-semibold px-8 py-3.5 rounded-xl text-base transition-colors shadow-sm"
         >
           Book Your Free Trial
         </a>

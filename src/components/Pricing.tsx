@@ -44,13 +44,13 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-20 bg-white">
+    <section id="pricing" className="py-20 bg-surface">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
             Simple, Transparent Pricing
           </h2>
-          <p className="mt-4 text-lg text-foreground/60 max-w-2xl mx-auto">
+          <p className="mt-3 text-base text-foreground/65 max-w-2xl mx-auto">
             No hidden fees, no contracts. Cancel anytime.
           </p>
         </div>
@@ -61,21 +61,21 @@ export default function Pricing() {
               key={plan.name}
               className={`rounded-2xl p-8 border-2 relative ${
                 plan.popular
-                  ? "border-primary bg-primary/5 shadow-xl shadow-primary/10"
-                  : "border-warm-200 bg-warm-50"
+                  ? "border-accent bg-accent/5 shadow-md"
+                  : "border-border bg-background"
               }`}
             >
               {plan.popular && (
-                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full">
+                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-accent text-white text-xs font-semibold uppercase tracking-wider px-4 py-1 rounded-xl">
                   Most Popular
                 </span>
               )}
-              <h3 className="text-xl font-bold text-foreground">{plan.name}</h3>
+              <h3 className="text-lg font-semibold text-foreground">{plan.name}</h3>
               <p className="text-sm text-foreground/50 mt-1">
                 {plan.description}
               </p>
               <div className="mt-6 mb-6">
-                <span className="text-4xl font-extrabold text-foreground">
+                <span className="text-3xl font-semibold text-foreground">
                   ${plan.price}
                 </span>
                 <span className="text-foreground/50 ml-1">{plan.per}</span>
@@ -91,17 +91,17 @@ export default function Pricing() {
                     key={f}
                     className="flex items-start gap-2 text-sm text-foreground/70"
                   >
-                    <span className="text-secondary mt-0.5">✓</span>
+                    <span className="text-success mt-0.5">✓</span>
                     {f}
                   </li>
                 ))}
               </ul>
               <a
                 href="#"
-                className={`block text-center font-bold py-3 rounded-full transition-colors ${
+                className={`block text-center font-semibold text-sm py-3 rounded-xl transition-colors ${
                   plan.popular
-                    ? "bg-primary hover:bg-primary-dark text-white"
-                    : "bg-foreground/10 hover:bg-foreground/20 text-foreground"
+                    ? "bg-primary hover:bg-primary-dark text-on-primary"
+                    : "bg-primary/10 hover:bg-primary/15 text-foreground"
                 }`}
               >
                 Get Started
@@ -111,8 +111,7 @@ export default function Pricing() {
         </div>
 
         <p className="text-center mt-10 text-foreground/50 text-sm">
-          🎁 First class is always <strong>free</strong> — no credit card
-          required.
+          First class is always <strong className="font-semibold">free</strong> — no credit card required.
         </p>
       </div>
     </section>
