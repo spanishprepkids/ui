@@ -33,8 +33,8 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="mt-3 text-base text-foreground/65 max-w-2xl mx-auto">
-            Getting started is simple — three easy steps and your child is on
-            their way to bilingualism.
+            From your first free trial to weekly classes, getting started takes
+            just three simple steps — built around your family&apos;s schedule.
           </p>
         </div>
 

@@ -6,8 +6,8 @@ export default function CTABanner() {
           Ready to Start Your Child&apos;s Spanish Journey?
         </h2>
         <p className="mt-3 text-base text-on-primary/80 max-w-xl mx-auto">
-          Book a free 25‑minute trial class today. No commitment, no credit card
-          required.
+          See how your child responds in a free 25-minute trial with Alejandra
+          — warm, low-pressure, and no credit card required.
         </p>
         <a
           href="#pricing"

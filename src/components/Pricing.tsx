@@ -51,7 +51,8 @@ export default function Pricing() {
             Simple, Transparent Pricing
           </h2>
           <p className="mt-3 text-base text-foreground/65 max-w-2xl mx-auto">
-            No hidden fees, no contracts. Cancel anytime.
+            Clear pricing with materials included — no hidden fees, no
+            contracts, and no pressure to commit before you&apos;re ready.
           </p>
         </div>
 

@@ -41,8 +41,9 @@ export default function Benefits() {
             Why Parents Choose Us
           </h2>
           <p className="mt-3 text-base text-foreground/65 max-w-2xl mx-auto">
-            We make learning Spanish easy, fun, and stress‑free — for kids{" "}
-            <em>and</em> parents.
+            Personalized 1-on-1 lessons that feel natural for kids and
+            reassuring for parents — no rigid curriculum, no one-size-fits-all
+            pace.
           </p>
         </div>
 

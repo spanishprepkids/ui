@@ -39,6 +39,10 @@ export default function FAQ() {
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
             Frequently Asked Questions
           </h2>
+          <p className="mt-3 text-base text-foreground/65 max-w-2xl mx-auto">
+            Answers to the questions parents ask most before booking their
+            child&apos;s first class.
+          </p>
         </div>
 
         <div className="space-y-3">

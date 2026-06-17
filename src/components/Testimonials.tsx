@@ -31,7 +31,8 @@ export default function Testimonials() {
             What Parents Are Saying
           </h2>
           <p className="mt-3 text-base text-foreground/65">
-            Don&apos;t just take our word for it.
+            Hear from parents who watched their children grow more confident in
+            Spanish, one lesson at a time.
           </p>
         </div>
 
