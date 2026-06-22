@@ -1,34 +1,46 @@
 import {
-  LuCalendar,
-  LuGamepad2,
-  LuMessageCircle,
-  LuTarget,
+  LuCalendarClock,
+  LuLanguages,
+  LuUser,
+  LuUsers,
 } from "react-icons/lu";
 
 const benefits = [
   {
-    icon: LuTarget,
+    icon: LuUser,
     title: "1‑on‑1 Attention",
     description:
       "Every class is tailored to your child's pace, interests, and learning style. No shared attention, no distractions.",
+    iconBg: "bg-gradient-to-br from-accent/30 to-accent/10",
+    iconColor: "text-accent-dark",
+    ring: "ring-accent/25",
   },
   {
-    icon: LuGamepad2,
-    title: "Fun & Interactive",
+    icon: LuUsers,
+    title: "Small Groups",
     description:
-      "Games, songs, stories, and hands‑on activities keep your child engaged and excited to learn more.",
+      "Fun & interactive games, conversation topics where your child feels confident sharing ideas by interacting with other kids of their age.",
+    iconBg: "bg-gradient-to-br from-secondary/40 to-secondary/15",
+    iconColor: "text-secondary-dark",
+    ring: "ring-secondary/30",
   },
   {
-    icon: LuCalendar,
+    icon: LuCalendarClock,
     title: "Flexible Scheduling",
     description:
-      "Choose class times that work for your family. Morning, afternoon, or evening — we adapt to you.",
+      "Choose class times that work for your family. Morning, afternoon, or evening — we adapt to you. Classes from 8am to 9pm Monday to Friday. Feel free to choose your class anytime!",
+    iconBg: "bg-gradient-to-br from-success/30 to-success/10",
+    iconColor: "text-primary-dark",
+    ring: "ring-success/25",
   },
   {
-    icon: LuMessageCircle,
+    icon: LuLanguages,
     title: "Native‑Speaking Tutor",
     description:
       "Learn from a certified, native Spanish speaker with 8+ years of experience teaching children.",
+    iconBg: "bg-gradient-to-br from-primary/25 to-primary/10",
+    iconColor: "text-primary-dark",
+    ring: "ring-primary/20",
   },
 ];
 
@@ -41,9 +53,8 @@ export default function Benefits() {
             Why Parents Choose Us
           </h2>
           <p className="mt-3 text-base text-foreground/65 max-w-2xl mx-auto">
-            Personalized 1-on-1 lessons that feel natural for kids and
-            reassuring for parents — no rigid curriculum, no one-size-fits-all
-            pace.
+            Personalized 1-on-1 lessons and small groups that feel natural for
+            kids and reassuring for parents.
           </p>
         </div>
 
@@ -53,8 +64,10 @@ export default function Benefits() {
               key={b.title}
               className="bg-background rounded-2xl p-8 text-center hover:shadow-md transition-shadow border border-border"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary mb-5">
-                <b.icon className="w-7 h-7" />
+              <div
+                className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${b.iconBg} ${b.iconColor} ring-2 ${b.ring} mb-5 shadow-sm`}
+              >
+                <b.icon className="w-8 h-8" strokeWidth={2.25} />
               </div>
               <h3 className="text-base font-semibold text-foreground mb-2">
                 {b.title}
