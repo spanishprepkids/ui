@@ -1,4 +1,4 @@
-import { LuClipboardList, LuHand, LuRocket } from "react-icons/lu";
+import { LuClipboardList, LuHand, LuRocket, LuUser, LuUsers } from "react-icons/lu";
 
 const steps = [
   {
@@ -21,6 +21,21 @@ const steps = [
     description:
       "Choose a plan and begin weekly classes. Watch your child's confidence grow with every session.",
     icon: LuRocket,
+  },
+];
+
+const lessonTypes = [
+  {
+    icon: LuUser,
+    title: "1-on-1",
+    description:
+      "Customized lessons based on each student's interests, learning needs, and goals.",
+  },
+  {
+    icon: LuUsers,
+    title: "Group Classes",
+    description:
+      "Interactive lessons focused on developing communication skills and building confidence with children of a similar age and level.",
   },
 ];
 
@@ -52,6 +67,25 @@ export default function HowItWorks() {
               </h3>
               <p className="text-sm text-foreground/65 leading-relaxed max-w-xs mx-auto">
                 {step.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-8">
+          {lessonTypes.map((lesson) => (
+            <div
+              key={lesson.title}
+              className="bg-background rounded-2xl p-8 border border-border"
+            >
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-4">
+                <lesson.icon className="w-6 h-6" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">
+                {lesson.title}
+              </h3>
+              <p className="text-sm text-foreground/65 leading-relaxed">
+                {lesson.description}
               </p>
             </div>
           ))}
