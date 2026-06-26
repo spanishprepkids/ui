@@ -33,7 +33,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#pricing"
+              href="#book"
               className="bg-on-primary hover:bg-on-primary/90 text-primary font-semibold text-sm px-5 py-2.5 rounded-xl transition-colors shadow-sm"
             >
               Book Free Trial
@@ -84,7 +84,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#pricing"
+            href="#book"
             onClick={() => setMobileOpen(false)}
             className="mt-2 block text-center bg-on-primary hover:bg-on-primary/90 text-primary font-semibold text-sm px-5 py-2.5 rounded-xl transition-colors shadow-sm"
           >

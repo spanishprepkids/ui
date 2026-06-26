@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { LuAward, LuGraduationCap, LuUsers } from "react-icons/lu";
+import { LuAward, LuGraduationCap } from "react-icons/lu";
 import headshot from "@/assets/headshot1.png";
 
 export default function About() {
@@ -29,33 +29,38 @@ export default function About() {
             <div className="space-y-4 text-base text-foreground/70 leading-relaxed">
               <p>
                 I&apos;m a certified Spanish teacher from Mexico with over 8
-                years of experience teaching children online. I hold a degree in
-                Early Childhood Education and a DELE C2 certification.
+                years of experience teaching children both in person and online.
+                I hold a degree in English Literature and am certified in
+                Teaching Spanish as a Second Language.
               </p>
               <p>
                 I believe that learning a language should be fun, natural, and
-                full of joy. My lessons are packed with games, stories, songs,
-                and real‑life conversations that make Spanish come alive for
-                young learners.
+                full of joy. My lessons are packed with engaging games, fun
+                stories, educational songs, and real-life conversations that
+                bring Spanish to life for young learners.
               </p>
               <p>
-                I&apos;ve helped over <strong className="font-semibold">200 kids</strong> from around the
-                world fall in love with Spanish — and I can&apos;t wait to meet
-                yours!
+                My goal is to help children build confidence, develop a love for
+                languages, and communicate naturally in Spanish through
+                interactive and engaging lessons.
+              </p>
+              <p className="font-semibold text-foreground">
+                <a
+                  href="#book"
+                  className="text-primary hover:text-primary-dark transition-colors"
+                >
+                  🎉 Book your first class for free!
+                </a>
               </p>
             </div>
             <div className="mt-6 flex gap-4 flex-wrap">
               <span className="inline-flex items-center gap-1.5 text-sm font-medium bg-surface-muted text-foreground px-4 py-2 rounded-xl border border-border">
                 <LuGraduationCap className="w-4 h-4 text-primary" />
-                B.Ed. Early Childhood
+                English Literature
               </span>
               <span className="inline-flex items-center gap-1.5 text-sm font-medium bg-surface-muted text-foreground px-4 py-2 rounded-xl border border-border">
                 <LuAward className="w-4 h-4 text-primary" />
-                DELE C2
-              </span>
-              <span className="inline-flex items-center gap-1.5 text-sm font-medium bg-surface-muted text-foreground px-4 py-2 rounded-xl border border-border">
-                <LuUsers className="w-4 h-4 text-primary" />
-                200+ Students
+                Teaching Spanish as a Second Language
               </span>
             </div>
           </div>

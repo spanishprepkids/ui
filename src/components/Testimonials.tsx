@@ -1,21 +1,21 @@
 const testimonials = [
   {
     quote:
-      "Emma knew maybe five words in Spanish when we started. Six months later she's chatting with her abuela on FaceTime — and she actually asks to practice. Alejandra Gomez has such a gentle way with kids. Emma thinks she's just playing games every week.",
+      "Emma knew maybe five words in Spanish when we started. Six months later she's chatting with her abuela on FaceTime — and she actually asks to practice. Teacher Alejandra has such a gentle way with kids. Emma thinks she's just playing games every week.",
     name: "Sarah M.",
     detail: "Mom of Emma, age 7",
     stars: 5,
   },
   {
     quote:
-      "Lucas used to hide when it was lesson time. Now he asks every morning if today is an Alejandra day. She remembers his dinosaur phase and his favorite colors — little things that make him feel seen. Alejandra Gomez turned something he dreaded into the best part of his week.",
+      "Lucas used to hide when it was lesson time. Now he asks every morning if today is time for Spanish class. Her classes are very fun and interactive that improves his creativity — Alejandra turned something he dreaded into the best part of his week.",
     name: "David R.",
     detail: "Dad of Lucas, age 5",
     stars: 5,
   },
   {
     quote:
-      "We tried two other tutors before we found Alejandra Gomez. Sofia was bored and resistant. With Alejandra, it clicked right away — songs, stories, no pressure. Now Sofia asks for extra classes. I didn't think that was possible.",
+      "We tried two other tutors before we found Alejandra. Sofia was bored and resistant. With Alejandra, it clicked right away — songs, stories, no pressure. Now, Sofia asks for extra classes.",
     name: "Jennifer L.",
     detail: "Mom of Sofia, age 10",
     stars: 5,

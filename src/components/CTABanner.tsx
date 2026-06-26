@@ -10,7 +10,7 @@ export default function CTABanner() {
           — warm, low-pressure, and no credit card required.
         </p>
         <a
-          href="#pricing"
+          href="#book"
           className="mt-8 inline-flex items-center justify-center bg-accent hover:bg-accent-dark text-white font-semibold px-8 py-3.5 rounded-xl text-base transition-colors shadow-sm"
         >
           Book Your Free Trial

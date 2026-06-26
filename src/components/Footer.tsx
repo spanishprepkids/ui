@@ -52,6 +52,14 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="#book"
+                  className="hover:text-secondary transition-colors"
+                >
+                  Book a Trial
+                </a>
+              </li>
+              <li>
+                <a
                   href="#pricing"
                   className="hover:text-secondary transition-colors"
                 >

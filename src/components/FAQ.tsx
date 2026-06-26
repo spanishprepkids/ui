@@ -9,23 +9,19 @@ const faqs = [
   },
   {
     q: "What platform do you use for classes?",
-    a: "Classes are held via Zoom. All you need is a computer or tablet with a camera and a stable internet connection.",
-  },
-  {
-    q: "How long is each class?",
-    a: "Each class is 25 minutes long — the ideal attention‑span window for young learners.",
+    a: "Classes are held via Google Meet. All you need is a computer or tablet with a camera and a stable internet connection.",
   },
   {
     q: "What if we need to cancel a class?",
-    a: "You can reschedule or cancel a class with at least 24 hours' notice at no charge.",
+    a: "You can reschedule or cancel a class with at least 3 hours' notice at no charge.",
+  },
+  {
+    q: "How far in advance can I book?",
+    a: "Free trial classes must be booked at least 24 hours before the start time. This gives us time to prepare a great first lesson for your child.",
   },
   {
     q: "Does my child need to know any Spanish?",
     a: "Not at all! I teach complete beginners through advanced students. We'll start right where your child is.",
-  },
-  {
-    q: "How do I book a free trial?",
-    a: "Simply click the 'Book a Free Trial' button anywhere on this page, choose a time that works, and you're all set!",
   },
 ];
 

@@ -21,7 +21,7 @@ export default function Hero() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
-                href="#pricing"
+                href="#book"
                 className="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-on-primary font-semibold px-7 py-3.5 rounded-xl text-base transition-colors shadow-sm"
               >
                 Book a Free Trial Class

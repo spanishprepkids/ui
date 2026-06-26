@@ -1,46 +1,128 @@
-const plans = [
+type Package = {
+  classes: number;
+  total: number;
+  perClass: number;
+  badge?: "popular" | "best-value";
+};
+
+type AgeGroup = {
+  label: string;
+  duration: string;
+  oneOnOne: Package[];
+  group: Package[];
+};
+
+const ageGroups: AgeGroup[] = [
   {
-    name: "Single Class",
-    price: 25,
-    per: "/ class",
-    description: "Perfect for trying us out",
-    features: [
-      "1 × 25‑minute class",
-      "Personalized lesson plan",
-      "Class materials included",
+    label: "Ages 4–6",
+    duration: "25 minutes",
+    oneOnOne: [
+      { classes: 4, total: 56, perClass: 14 },
+      { classes: 8, total: 96, perClass: 12, badge: "popular" },
+      { classes: 12, total: 120, perClass: 10, badge: "best-value" },
     ],
-    popular: false,
+    group: [
+      { classes: 4, total: 44, perClass: 11 },
+      { classes: 8, total: 72, perClass: 9, badge: "popular" },
+    ],
   },
   {
-    name: "4‑Class Pack",
-    price: 22,
-    per: "/ class",
-    total: 88,
-    description: "Most flexible",
-    features: [
-      "4 × 25‑minute classes",
-      "Personalized lesson plan",
-      "Class materials included",
-      "Progress report",
+    label: "Ages 7–9",
+    duration: "45 minutes",
+    oneOnOne: [
+      { classes: 4, total: 80, perClass: 20 },
+      { classes: 8, total: 144, perClass: 18, badge: "popular" },
+      { classes: 12, total: 192, perClass: 16, badge: "best-value" },
     ],
-    popular: true,
+    group: [
+      { classes: 4, total: 60, perClass: 15 },
+      { classes: 8, total: 104, perClass: 13, badge: "popular" },
+    ],
   },
   {
-    name: "8‑Class Pack",
-    price: 19,
-    per: "/ class",
-    total: 152,
-    description: "Best value",
-    features: [
-      "8 × 25‑minute classes",
-      "Personalized lesson plan",
-      "Class materials included",
-      "Monthly progress report",
-      "Priority scheduling",
+    label: "Ages 10–12",
+    duration: "60 minutes",
+    oneOnOne: [
+      { classes: 4, total: 88, perClass: 22 },
+      { classes: 8, total: 160, perClass: 20, badge: "popular" },
+      { classes: 12, total: 216, perClass: 18, badge: "best-value" },
     ],
-    popular: false,
+    group: [
+      { classes: 4, total: 72, perClass: 18 },
+      { classes: 8, total: 128, perClass: 16, badge: "popular" },
+    ],
   },
 ];
+
+function PackageCard({ pkg }: { pkg: Package }) {
+  const isHighlighted = pkg.badge === "popular";
+
+  return (
+    <div
+      className={`rounded-2xl p-6 border-2 relative ${
+        isHighlighted
+          ? "border-accent bg-accent/5 shadow-md"
+          : "border-border bg-background"
+      }`}
+    >
+      {pkg.badge === "popular" && (
+        <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-xl whitespace-nowrap">
+          ⭐ Most Popular
+        </span>
+      )}
+      {pkg.badge === "best-value" && (
+        <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-xl whitespace-nowrap">
+          Best Value
+        </span>
+      )}
+      <p className="text-base font-semibold text-foreground">
+        {pkg.classes} Classes
+      </p>
+      <div className="mt-3">
+        <span className="text-2xl font-semibold text-foreground">
+          ${pkg.total}
+        </span>
+        <span className="text-sm text-foreground/50 ml-1">total</span>
+      </div>
+      <p className="text-sm text-foreground/60 mt-1">
+        ${pkg.perClass}/class
+      </p>
+      <a
+        href="#book"
+        className={`mt-5 block text-center font-semibold text-sm py-2.5 rounded-xl transition-colors ${
+          isHighlighted
+            ? "bg-primary hover:bg-primary-dark text-on-primary"
+            : "bg-primary/10 hover:bg-primary/15 text-foreground"
+        }`}
+      >
+        Get Started
+      </a>
+    </div>
+  );
+}
+
+function PackageGroup({
+  title,
+  packages,
+}: {
+  title: string;
+  packages: Package[];
+}) {
+  return (
+    <div>
+      <h4 className="text-base font-semibold text-foreground mb-4">{title}</h4>
+      <div
+        className={`grid gap-4 ${
+          packages.length === 3 ? "sm:grid-cols-3" : "sm:grid-cols-2"
+        }`}
+      >
+        {packages.map((pkg) => (
+          <PackageCard key={`${title}-${pkg.classes}`} pkg={pkg} />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Pricing() {
   return (
@@ -56,63 +138,29 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 items-start">
-          {plans.map((plan) => (
-            <div
-              key={plan.name}
-              className={`rounded-2xl p-8 border-2 relative ${
-                plan.popular
-                  ? "border-accent bg-accent/5 shadow-md"
-                  : "border-border bg-background"
-              }`}
-            >
-              {plan.popular && (
-                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-accent text-white text-xs font-semibold uppercase tracking-wider px-4 py-1 rounded-xl">
-                  Most Popular
-                </span>
-              )}
-              <h3 className="text-lg font-semibold text-foreground">{plan.name}</h3>
-              <p className="text-sm text-foreground/50 mt-1">
-                {plan.description}
-              </p>
-              <div className="mt-6 mb-6">
-                <span className="text-3xl font-semibold text-foreground">
-                  ${plan.price}
-                </span>
-                <span className="text-foreground/50 ml-1">{plan.per}</span>
-                {plan.total && (
-                  <p className="text-sm text-foreground/40 mt-1">
-                    ${plan.total} total
-                  </p>
-                )}
+        <div className="space-y-14">
+          {ageGroups.map((group) => (
+            <div key={group.label}>
+              <div className="mb-8">
+                <h3 className="text-xl md:text-2xl font-semibold text-foreground">
+                  {group.label}{" "}
+                  <span className="text-foreground/50 font-normal text-lg">
+                    ({group.duration})
+                  </span>
+                </h3>
               </div>
-              <ul className="space-y-3 mb-8">
-                {plan.features.map((f) => (
-                  <li
-                    key={f}
-                    className="flex items-start gap-2 text-sm text-foreground/70"
-                  >
-                    <span className="text-success mt-0.5">✓</span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#"
-                className={`block text-center font-semibold text-sm py-3 rounded-xl transition-colors ${
-                  plan.popular
-                    ? "bg-primary hover:bg-primary-dark text-on-primary"
-                    : "bg-primary/10 hover:bg-primary/15 text-foreground"
-                }`}
-              >
-                Get Started
-              </a>
+
+              <div className="grid lg:grid-cols-2 gap-10">
+                <PackageGroup title="1-on-1 Packages" packages={group.oneOnOne} />
+                <PackageGroup title="Group Packages" packages={group.group} />
+              </div>
             </div>
           ))}
         </div>
 
         <p className="text-center mt-10 text-foreground/50 text-sm">
-          First class is always <strong className="font-semibold">free</strong> — no credit card required.
+          First class is always <strong className="font-semibold">free</strong>{" "}
+          — no credit card required.
         </p>
       </div>
     </section>
