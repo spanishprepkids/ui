@@ -81,7 +81,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2">
                 <LuMail className="w-4 h-4 shrink-0" />
-                hello@spanishprepkids.com
+               <a href="mailto:hello@spanishprepkids.com">hello@spanishprepkids.com</a>
               </li>
               <li className="flex items-center gap-2">
                 <LuSmartphone className="w-4 h-4 shrink-0" />
