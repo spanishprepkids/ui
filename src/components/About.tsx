@@ -4,7 +4,7 @@ import headshot from "@/assets/headshot1.png";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-surface">
+    <section id="about" className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
@@ -24,32 +24,30 @@ export default function About() {
               ¡Hola! I&apos;m Alejandra Gomez
             </h2>
             <p className="text-primary font-medium text-sm mb-5">
-              Certified Spanish Teacher &bull; 8+ Years Experience
+              Certified Spanish teacher. 8+ years with kids.
             </p>
             <div className="space-y-4 text-base text-foreground/70 leading-relaxed">
               <p>
-                I&apos;m a certified Spanish teacher from Mexico with over 8
-                years of experience teaching children both in person and online.
-                I hold a degree in English Literature and am certified in
-                Teaching Spanish as a Second Language.
+                I&apos;m from Mexico. I have taught children in person and
+                online for over 8 years, including the 4 to 6, 7 to 9, and 10
+                to 12 classes here. I have a degree in English Literature and a
+                certification in Teaching Spanish as a Second Language.
               </p>
               <p>
-                I believe that learning a language should be fun, natural, and
-                full of joy. My lessons are packed with engaging games, fun
-                stories, educational songs, and real-life conversations that
-                bring Spanish to life for young learners.
+                Class is in Spanish as much as possible. If a child is lost or
+                getting upset, I use English so they can keep going.
               </p>
               <p>
-                My goal is to help children build confidence, develop a love for
-                languages, and communicate naturally in Spanish through
-                interactive and engaging lessons.
+                After every class I send you notes: how they showed up that day,
+                what they actually did, and what I would practice before the
+                next one.
               </p>
-              <p className="font-semibold text-foreground">
+              <p>
                 <a
                   href="#book"
-                  className="text-primary hover:text-primary-dark transition-colors"
+                  className="font-semibold text-primary hover:text-primary-dark transition-colors"
                 >
-                  🎉 Book your first class for free!
+                  Book a free Spanish assessment
                 </a>
               </p>
             </div>

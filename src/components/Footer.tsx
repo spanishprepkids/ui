@@ -17,7 +17,7 @@ export default function Footer() {
               <BrandLogo size="md" />
             </a>
             <p className="text-sm leading-relaxed">
-              Fun, engaging online Spanish classes for kids ages 4–12.
+              Online Spanish for ages 4 to 6, 7 to 9, and 10 to 12.
             </p>
           </div>
 
@@ -28,10 +28,10 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="#benefits"
+                  href="#programs"
                   className="hover:text-secondary transition-colors"
                 >
-                  Benefits
+                  Classes
                 </a>
               </li>
               <li>
@@ -39,7 +39,7 @@ export default function Footer() {
                   href="#how-it-works"
                   className="hover:text-secondary transition-colors"
                 >
-                  How It Works
+                  How it works
                 </a>
               </li>
               <li>
@@ -55,7 +55,7 @@ export default function Footer() {
                   href="#book"
                   className="hover:text-secondary transition-colors"
                 >
-                  Book a Trial
+                  Book assessment
                 </a>
               </li>
               <li>

@@ -15,9 +15,9 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "SpanishPrepKids — Fun Online Spanish Classes for Kids",
+  title: "SpanishPrepKids | Online Spanish for ages 4 to 12",
   description:
-    "1-on-1 online Spanish tutoring for kids ages 4–12. Fun, interactive lessons with a native-speaking tutor. Book a free trial today!",
+    "Online Spanish for ages 4 to 6 (25 min), 7 to 9 (30 to 35 min), and 10 to 12 (45 min). Book a free 25 minute assessment.",
 };
 
 export default function RootLayout({

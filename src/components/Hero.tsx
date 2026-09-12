@@ -8,33 +8,33 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-primary font-medium text-xs uppercase tracking-[0.14em] mb-4">
-              Online Spanish Classes for Kids
+              Online Spanish for ages 4 to 12
             </p>
             <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-semibold leading-[1.15] text-foreground">
-              Your Child Will{" "}
-              <span className="text-accent">Love</span> Speaking Spanish!
+              Give them a place to actually{" "}
+              <span className="text-accent">speak</span> Spanish every week.
             </h1>
             <p className="mt-5 text-base md:text-lg text-foreground/70 leading-relaxed max-w-lg">
-              Fun, engaging 1‑on‑1 online Spanish classes designed for kids ages
-              4–12. Taught by an experienced native‑speaking tutor who makes
-              every lesson an adventure.
+              Three classes, by age. 25 minutes for 4 to 6. 30 to 35 minutes for
+              7 to 9. 45 minutes for 10 to 12. Same teacher. One-on-one or a
+              small group.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
                 href="#book"
                 className="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-on-primary font-semibold px-7 py-3.5 rounded-xl text-base transition-colors shadow-sm"
               >
-                Book a Free Trial Class
+                Book Your Free Spanish Assessment
               </a>
               <a
-                href="#pricing"
+                href="#programs"
                 className="inline-flex items-center justify-center border-2 border-primary text-primary hover:bg-primary hover:text-on-primary font-semibold px-7 py-3.5 rounded-xl text-base transition-colors"
               >
-                See Pricing
+                See the classes
               </a>
             </div>
             <p className="mt-4 text-sm text-foreground/50">
-              ✓ No credit card required &nbsp; ✓ 25‑minute free trial
+              No credit card. 25 minutes. You get notes after class.
             </p>
           </div>
 

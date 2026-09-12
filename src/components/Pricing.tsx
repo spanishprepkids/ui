@@ -19,8 +19,8 @@ type AgeGroup = {
 
 const ageGroups: AgeGroup[] = [
   {
-    label: "Ages 4–6",
-    shortLabel: "4–6",
+    label: "Ages 4 to 6",
+    shortLabel: "4 to 6",
     duration: "25 minutes",
     oneOnOne: [
       { classes: 4, total: 56, perClass: 14 },
@@ -33,9 +33,9 @@ const ageGroups: AgeGroup[] = [
     ],
   },
   {
-    label: "Ages 7–9",
-    shortLabel: "7–9",
-    duration: "45 minutes",
+    label: "Ages 7 to 9",
+    shortLabel: "7 to 9",
+    duration: "30 to 35 minutes",
     oneOnOne: [
       { classes: 4, total: 80, perClass: 20 },
       { classes: 8, total: 144, perClass: 18, recommended: true },
@@ -47,9 +47,9 @@ const ageGroups: AgeGroup[] = [
     ],
   },
   {
-    label: "Ages 10–12",
-    shortLabel: "10–12",
-    duration: "60 minutes",
+    label: "Ages 10 to 12",
+    shortLabel: "10 to 12",
+    duration: "45 minutes",
     oneOnOne: [
       { classes: 4, total: 88, perClass: 22 },
       { classes: 8, total: 160, perClass: 20, recommended: true },
@@ -63,9 +63,9 @@ const ageGroups: AgeGroup[] = [
 ];
 
 const included = [
-  "All learning materials included",
-  "Flexible scheduling, no contracts",
-  "Progress updates for parents",
+  "Printables and class materials",
+  "Notes after every class",
+  "Sibling plans available",
 ];
 
 function PackageOption({ pkg }: { pkg: Package }) {
@@ -109,11 +109,12 @@ export default function Pricing() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
-            Simple, Transparent Pricing
+            Pricing
           </h2>
           <p className="mt-3 text-base text-foreground/65 max-w-xl mx-auto">
-            Choose the age group and format that fits your child. All packages
-            include materials — no hidden fees or long-term contracts.
+            Three classes: ages 4 to 6 (25 minutes), 7 to 9 (30 to 35 minutes),
+            and 10 to 12 (45 minutes). Then pick one-on-one or a small group. No
+            long-term contract.
           </p>
         </div>
 
@@ -208,10 +209,10 @@ export default function Pricing() {
               href="#book"
               className="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-on-primary font-semibold px-8 py-3.5 rounded-xl text-base transition-colors shadow-sm"
             >
-              Book a Free Trial Class
+              Book Your Free Spanish Assessment
             </a>
             <p className="mt-3 text-sm text-foreground/50">
-              Try a class first — no credit card required
+              25 minutes. No credit card.
             </p>
           </div>
         </div>

@@ -6,12 +6,12 @@ export default function Booking() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
-            Book Your Free Trial Class
+            Book Your Free Spanish Assessment
           </h2>
           <p className="mt-3 text-base text-foreground/65 max-w-2xl mx-auto">
-            Pick a time that works for your family. The trial is 25 minutes, no
-            credit card required, and classes must be booked at least 24 hours in
-            advance.
+            25 minutes on Google Meet. No credit card. Please book at least 24
+            hours ahead. After class you get notes and a recommendation for the
+            4 to 6, 7 to 9, or 10 to 12 class.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ export default function Booking() {
             src={bookingUrl}
             className="w-full rounded-2xl border border-border bg-surface"
             style={{ height: "700px", border: 0 }}
-            title="Book a free trial class"
+            title="Book a free Spanish assessment"
           />
         ) : (
           <div className="rounded-2xl border border-dashed border-border bg-surface-muted px-6 py-12 text-center">
@@ -40,8 +40,8 @@ export default function Booking() {
         )}
 
         <p className="text-center mt-6 text-foreground/50 text-sm">
-          Already booked? You can reschedule or cancel with at least 3 hours&apos;
-          notice — see our{" "}
+          Already booked? You can reschedule or cancel with at least 3 hours
+          notice. Details are in the{" "}
           <a href="#faq" className="text-primary hover:text-primary-dark transition-colors">
             FAQ
           </a>

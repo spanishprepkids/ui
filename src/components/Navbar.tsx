@@ -4,8 +4,8 @@ import { useState } from "react";
 import BrandLogo from "./BrandLogo";
 
 const navLinks = [
-  { label: "Benefits", href: "#benefits" },
-  { label: "How It Works", href: "#how-it-works" },
+  { label: "Classes", href: "#programs" },
+  { label: "How it works", href: "#how-it-works" },
   { label: "About", href: "#about" },
   { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
@@ -36,7 +36,7 @@ export default function Navbar() {
               href="#book"
               className="bg-on-primary hover:bg-on-primary/90 text-primary font-semibold text-sm px-5 py-2.5 rounded-xl transition-colors shadow-sm"
             >
-              Book Free Trial
+              Book Assessment
             </a>
           </div>
 
@@ -88,7 +88,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen(false)}
             className="mt-2 block text-center bg-on-primary hover:bg-on-primary/90 text-primary font-semibold text-sm px-5 py-2.5 rounded-xl transition-colors shadow-sm"
           >
-            Book Free Trial
+            Book Assessment
           </a>
         </div>
       )}
