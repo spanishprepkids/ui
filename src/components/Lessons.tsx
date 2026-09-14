@@ -32,7 +32,8 @@ export default function Lessons() {
           <p className="mt-3 text-base text-foreground/65 leading-relaxed">
             Inside the 4 to 6, 7 to 9, or 10 to 12 class, we work on the skills
             your child needs most. You pick one-on-one or a small group. Class
-            times depend on what we have open (8am to 9pm, Monday to Friday).
+            times depend on what we have open (8am to 9pm, Monday to Friday, and
+            Saturdays 10am to 1pm).
           </p>
         </div>
 

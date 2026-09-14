@@ -94,8 +94,8 @@ export default function HowItWorks() {
             Pick a time
           </a>
           <p className="text-sm text-foreground/55">
-            Times are usually open 8am–9pm, Monday to Friday. Book at least 24
-            hours ahead.
+            Times are usually open 8am–9pm Monday to Friday, and Saturdays
+            10am to 1pm. Book at least 24 hours ahead.
           </p>
         </div>
       </div>
