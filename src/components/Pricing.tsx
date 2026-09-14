@@ -113,8 +113,7 @@ export default function Pricing() {
           </h2>
           <p className="mt-3 text-base text-foreground/65 max-w-xl mx-auto">
             Three classes: ages 4 to 6 (25 minutes), 7 to 9 (30 to 35 minutes),
-            and 10 to 12 (45 minutes). Then pick one-on-one or a small group. No
-            long-term contract.
+            and 10 to 12 (45 minutes). Then pick one-on-one or a small group.
           </p>
         </div>
 
@@ -212,7 +211,7 @@ export default function Pricing() {
               Try a free 25-minute class
             </a>
             <p className="mt-3 text-sm text-foreground/50">
-              25 minutes. No credit card.
+              25 minutes.
             </p>
           </div>
         </div>

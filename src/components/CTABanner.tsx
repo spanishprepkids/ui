@@ -7,7 +7,7 @@ export default function CTABanner() {
         </h2>
         <p className="mt-3 text-base text-on-primary/80 max-w-xl mx-auto">
           Try a free 25-minute class. We place your child in the 4 to 6,
-          7 to 9, or 10 to 12 class. No credit card.
+          7 to 9, or 10 to 12 class.
         </p>
         <a
           href="#book"

@@ -17,7 +17,7 @@ const sourceSerif = Source_Serif_4({
 export const metadata: Metadata = {
   title: "SpanishPrepKids | Online Spanish for ages 4 to 12",
   description:
-    "Live online Spanish for ages 4 to 12 with the same Mexican teacher every week. Try a free 25-minute class. No credit card.",
+    "Live online Spanish for ages 4 to 12 with the same Mexican teacher every week. Try a free 25-minute class.",
 };
 
 export default function RootLayout({

@@ -3,7 +3,7 @@ const steps = [
     number: "1",
     title: "Try a free 25-minute class",
     description:
-      "A real lesson, not a test or a sales call. No card. Please book at least 24 hours ahead.",
+      "A real lesson, not a test or a sales call. Please book at least 24 hours ahead.",
   },
   {
     number: "2",

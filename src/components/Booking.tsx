@@ -9,8 +9,8 @@ export default function Booking() {
             Try a free 25-minute class
           </h2>
           <p className="mt-3 text-base text-foreground/65 max-w-2xl mx-auto">
-            A real lesson on Google Meet, not a test. No credit card. Book at
-            least 24 hours ahead. After class you get notes and a recommended
+            A real lesson on Google Meet, not a test. Book at least 24 hours
+            ahead. After class you get notes and a recommended
             plan for the 4 to 6, 7 to 9, or 10 to 12 class.
           </p>
         </div>
