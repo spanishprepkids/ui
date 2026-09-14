@@ -14,11 +14,11 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-primary font-medium text-xs uppercase tracking-[0.14em] mb-4">
-              Live online Spanish with a teacher your child can keep
+              A free live class your child can try this week
             </p>
             <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-semibold leading-[1.15] text-foreground">
-              Your child speaks more Spanish.{" "}
-              <span className="text-accent">You see the progress.</span>
+              Hear them speak Spanish.{" "}
+              <span className="text-accent">See them get better.</span>
             </h1>
             <p className="mt-5 text-base md:text-lg text-foreground/70 leading-relaxed max-w-lg">
               Ages 4–12 with a Mexican teacher who stays with your
