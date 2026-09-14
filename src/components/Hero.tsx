@@ -52,7 +52,7 @@ export default function Hero() {
                 src={headshot}
                 alt="Alejandra Gomez, Spanish teacher"
                 fill
-                className="object-cover object-[center_22%]"
+                className="object-cover object-center"
                 sizes="(max-width: 768px) 256px, 320px"
                 priority
               />
