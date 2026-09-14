@@ -47,7 +47,7 @@ export default function About() {
                   href="#book"
                   className="font-semibold text-primary hover:text-primary-dark transition-colors"
                 >
-                  Book a free Spanish assessment
+                  Try a free 25-minute class
                 </a>
               </p>
             </div>

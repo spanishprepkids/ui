@@ -6,14 +6,14 @@ export default function CTABanner() {
           Give them a place to actually speak Spanish
         </h2>
         <p className="mt-3 text-base text-on-primary/80 max-w-xl mx-auto">
-          Book a free 25 minute assessment. We place your child in the 4 to 6,
+          Try a free 25-minute class. We place your child in the 4 to 6,
           7 to 9, or 10 to 12 class. No credit card.
         </p>
         <a
           href="#book"
-          className="mt-8 inline-flex items-center justify-center bg-accent hover:bg-accent-dark text-white font-semibold px-8 py-3.5 rounded-xl text-base transition-colors shadow-sm"
+          className="mt-8 inline-flex items-center justify-center bg-accent hover:bg-accent-dark text-white font-semibold px-8 py-3.5 rounded-xl text-base transition-colors"
         >
-          Book Your Free Spanish Assessment
+          Try a free 25-minute class
         </a>
       </div>
     </section>

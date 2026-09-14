@@ -209,7 +209,7 @@ export default function Pricing() {
               href="#book"
               className="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-on-primary font-semibold px-8 py-3.5 rounded-xl text-base transition-colors shadow-sm"
             >
-              Book Your Free Spanish Assessment
+              Try a free 25-minute class
             </a>
             <p className="mt-3 text-sm text-foreground/50">
               25 minutes. No credit card.

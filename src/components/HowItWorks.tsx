@@ -1,9 +1,9 @@
 const steps = [
   {
     number: "1",
-    title: "Book a free Spanish assessment",
+    title: "Try a free 25-minute class",
     description:
-      "Pick a time. It is 25 minutes and you do not need a card. Please book at least 24 hours ahead.",
+      "A real lesson, not a test or a sales call. No card. Please book at least 24 hours ahead.",
   },
   {
     number: "2",
@@ -44,12 +44,11 @@ export default function HowItWorks() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-12">
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
-            How it works
+            How the free class works
           </h2>
           <p className="mt-3 text-base text-foreground/65 leading-relaxed">
-            The first session is a 25 minute assessment. Alejandra uses it to
-            see where your child is, then we place them in the 4 to 6, 7 to 9,
-            or 10 to 12 class.
+            Alejandra teaches a real 25-minute class, learns your child&apos;s
+            level, and sends a personal plan. There is no pressure to enroll.
           </p>
         </div>
 
@@ -85,6 +84,19 @@ export default function HowItWorks() {
               </li>
             ))}
           </ol>
+        </div>
+
+        <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-4">
+          <a
+            href="#book"
+            className="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-on-primary font-semibold px-7 py-3.5 rounded-xl text-base transition-colors"
+          >
+            Pick a time
+          </a>
+          <p className="text-sm text-foreground/55">
+            Times are usually open 8am–9pm, Monday to Friday. Book at least 24
+            hours ahead.
+          </p>
         </div>
       </div>
     </section>

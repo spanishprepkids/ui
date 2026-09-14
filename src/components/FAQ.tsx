@@ -9,15 +9,15 @@ const faqs = [
   },
   {
     q: "What ages do you teach?",
-    a: "Ages 4 to 12, in those three classes. The free assessment is 25 minutes for everyone, then they join the class for their age.",
+    a: "Ages 4 to 12, in those three classes. The free class is 25 minutes for everyone, then they join the class for their age.",
   },
   {
     q: "Does my child need to know Spanish already?",
     a: "No. The class is by age, not by level. Kids who are starting from zero, kids who understand more than they say, and kids who already speak some Spanish all go in the class for their age. We change the lesson to match.",
   },
   {
-    q: "What is the free Spanish assessment?",
-    a: "A 25 minute live session with Alejandra. She sees what your child understands and what they will say out loud. Afterward you get a progress summary, a recommended plan, and an enrollment link. Book at least 24 hours ahead.",
+    q: "What happens in the free class?",
+    a: "A 25-minute live lesson with Alejandra—not a test and not a sales consultation. She sees what your child understands and what they will say out loud. Afterward you get a progress summary, a recommended plan, and an enrollment link if you want it. There is no pressure to enroll. Book at least 24 hours ahead.",
   },
   {
     q: "Do you offer one-on-one and group classes?",
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "What information is collected about the child?",
-    a: "We use their first name, age, and what you tell us about their Spanish so we can plan the assessment and send you notes after class.",
+    a: "We use their first name, age, and what you tell us about their Spanish so we can plan the first class and send you notes afterward.",
   },
   {
     q: "What safeguards are in place?",

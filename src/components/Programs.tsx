@@ -3,19 +3,19 @@ const classes = [
     title: "Online Spanish for ages 4 to 6",
     duration: "25 minute classes",
     detail:
-      "Short on purpose. Songs, games, first words, and talking out loud before they get restless. One-on-one or a small group.",
+      "Short on purpose. Songs, games, first words, and talking out loud before they get restless.",
   },
   {
     title: "Online Spanish for ages 7 to 9",
     duration: "30 to 35 minute classes",
     detail:
-      "A bit longer than the little-kid class. More conversation, some reading, still a lot of speaking. One-on-one or a small group.",
+      "A bit longer than the little-kid class. More conversation, some reading, still a lot of speaking.",
   },
   {
     title: "Online Spanish for ages 10 to 12",
     duration: "45 minute classes",
     detail:
-      "Enough time for conversation, reading, and writing without turning into a long sit. One-on-one or a small group.",
+      "Enough time for conversation, reading, and writing without turning into a long sit.",
   },
 ];
 
@@ -29,9 +29,6 @@ export default function Programs() {
           </h2>
           <p className="mt-3 text-base text-foreground/65 leading-relaxed">
             We offer three classes, split by age so the length and pace fit.
-            Beginners, kids who understand more than they say, and kids who
-            already speak some Spanish all go into the class for their age. We
-            adjust the lesson from there.
           </p>
         </div>
 

@@ -1,18 +1,12 @@
-import {
-  LuFacebook,
-  LuInstagram,
-  LuMail,
-  LuSmartphone,
-  LuYoutube,
-} from "react-icons/lu";
+import { LuMail, LuSmartphone } from "react-icons/lu";
 import BrandLogo from "./BrandLogo";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-on-primary/70 py-12">
+    <footer className="bg-primary text-on-primary/70 py-12 pb-28 md:pb-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="sm:col-span-2 md:col-span-1">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div>
             <a href="#" className="inline-block mb-4">
               <BrandLogo size="md" />
             </a>
@@ -55,7 +49,7 @@ export default function Footer() {
                   href="#book"
                   className="hover:text-secondary transition-colors"
                 >
-                  Book assessment
+                  Book a free class
                 </a>
               </li>
               <li>
@@ -90,34 +84,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-on-primary font-medium mb-4 text-xs uppercase tracking-[0.12em]">
-              Follow Us
-            </h4>
-            <div className="flex gap-4">
-              <a
-                href="#"
-                aria-label="Instagram"
-                className="hover:text-secondary transition-colors"
-              >
-                <LuInstagram className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="hover:text-secondary transition-colors"
-              >
-                <LuFacebook className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                aria-label="YouTube"
-                className="hover:text-secondary transition-colors"
-              >
-                <LuYoutube className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
         </div>
 
         <div className="mt-10 pt-6 border-t border-on-primary/10 text-center text-sm text-on-primary/40">
