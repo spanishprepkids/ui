@@ -1,5 +1,5 @@
 import Image from "next/image";
-import headshot from "@/assets/headshot1.png";
+import graphic from "@/assets/graphic.png";
 
 const trustItems = [
   "Same teacher every week",
@@ -46,23 +46,13 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-col items-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20">
-              <Image
-                src={headshot}
-                alt="Alejandra Gomez, Spanish teacher"
-                fill
-                className="object-cover object-center"
-                sizes="(max-width: 768px) 256px, 320px"
-                priority
-              />
-            </div>
-            <p className="mt-4 text-sm font-medium text-foreground">
-              Alejandra Gomez
-            </p>
-            <p className="text-sm text-foreground/55">
-              Mexican teacher · 8+ years with kids
-            </p>
+          <div className="flex items-center justify-center rounded-2xl overflow-hidden">
+            <Image
+              src={graphic}
+              alt="Online Spanish class with a teacher and student"
+              className="w-full max-w-md h-auto rounded-2xl"
+              priority
+            />
           </div>
         </div>
 
