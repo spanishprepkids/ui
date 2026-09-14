@@ -34,14 +34,22 @@ export default function About() {
                 certification in Teaching Spanish as a Second Language.
               </p>
               <p>
-                Class is in Spanish as much as possible. If a child is lost or
-                getting upset, I use English so they can keep going.
+                Class is in Spanish as much as possible.
+              </p>
+              <p>
+                I like to make sure my students feel comfortable and see them
+                learning while doing what they enjoy most in our activities.
+              </p>
+              <p>
+                We adjust to their needs and skills to create the most fun
+                lessons.
               </p>
               <p>
                 After every class I send you notes: how they showed up that day,
                 what they actually did, and what I would practice before the
                 next one.
               </p>
+              <p>See you in class!</p>
               <p>
                 <a
                   href="#book"
