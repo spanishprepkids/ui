@@ -21,7 +21,7 @@ export default function Hero() {
               <span className="text-accent">You see the progress.</span>
             </h1>
             <p className="mt-5 text-base md:text-lg text-foreground/70 leading-relaxed max-w-lg">
-              Ages 4–12 with Alejandra, a Mexican teacher who stays with your
+              Ages 4–12 with a Mexican teacher who stays with your
               child every week. Every class includes speaking practice and a
               parent note with what to practice next.
             </p>
