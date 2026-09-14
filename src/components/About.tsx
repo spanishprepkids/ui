@@ -13,8 +13,9 @@ export default function About() {
                 src={headshot}
                 alt="Alejandra Gomez, certified Spanish teacher"
                 fill
+                quality={95}
                 className="object-cover object-center"
-                sizes="(max-width: 768px) 288px, 320px"
+                sizes="(max-width: 768px) 288px, 640px"
               />
             </div>
           </div>
